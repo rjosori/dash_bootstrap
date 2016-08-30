@@ -12,8 +12,8 @@
 <div class="nav-container">
   <nav class="navbar navbar-default navbar-fixed-top main-nav">
     <div class="container">
-      <div class="title-bar-left logo">Dashboards</div>
-      <ul class="title-bar-right">
+      <div class="logo">Dashboards</div>
+      <ul>
         <li><a href="#">Link A</a></li>
         <li><a href="#">Link B</a></li>
         <li><a href="#">Link C</a></li>
@@ -42,9 +42,11 @@
     <div class="col-lg-12">
       <div class="code-snippet h1">
         &lt;div class=<span class="attribute">"page-title-container"</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"row"</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"col-lg-12"</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class=<span class="attribute">"page-title"</span>&gt;<span class="code-text">This is an H1 Heading</span>&lt;/h1&gt;
+        <br>&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"container"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"row"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"col-lg-12"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class=<span class="attribute">"page-title"</span>&gt;<span class="code-text">This is an H1 Heading</span>&lt;/h1&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
         <br>&nbsp;&nbsp;&nbsp;&lt;/div&gt;
         <br>&lt;/div&gt;
@@ -52,28 +54,24 @@
 
       <h2 class="section-title">Main Navigation</h2>
       <div class="code-snippet">
-        &lt;div <span class="attribute">data-sticky-container</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"nav-container sticky"</span> data-options=<span class="attribute">"marginTop:0;" data-sticky</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"row"</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"col-lg-12"</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav class=<span class="attribute">"title-bar main-nav"</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"title-bar-left logo"</span>&gt;<span class="code-text">Dash</span>&lt;/div&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=<span class="attribute">"title-bar-right"</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link A</span>&lt;/a&gt;&lt;/li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link B</span>&lt;/a&gt;&lt;/li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link C</span>&lt;/a&gt;&lt;/li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class=<span class="attribute">"nav-link"</span> href="#"&gt;<span class="code-text">Link D</span>&lt;/a&gt;&lt;/li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class=<span class="attribute">"icon-button"</span>&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=<span class="attribute">"icon-user-icn"</span>&gt;&lt;/i&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=<span class="attribute">"no-text"</span>&gt;<span class="code-text">My Account</span>&lt;/span&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
-        <br>&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+        &lt;div class=<span class="attribute">"nav-container"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&lt;nav class=<span class="attribute">"title-bar main-nav"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"container"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"logo"</span>&gt;<span class="code-text">Dashboards</span>&lt;/div&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link A</span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link B</span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;<span class="code-text">Link C</span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class=<span class="attribute">"nav-link"</span> href="#"&gt;<span class="code-text">Link D</span>&lt;/a&gt;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class=<span class="attribute">"icon-button"</span>&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=<span class="attribute">"icon-user-icn"</span>&gt;&lt;/i&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=<span class="attribute">"no-text"</span>&gt;<span class="code-text">My Account</span>&lt;/span&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+        <br>&nbsp;&nbsp;&nbsp;&lt;/nav&gt;
         <br>&lt;/div&gt;
       </div>
     </div>
@@ -111,17 +109,17 @@
   <div class="row">
     <div class="col-lg-12 section">
       <h2 class="section-title">Buttons and Button-looking Anchors</h2>
-      <button type="button" class="btn btn-default">Default Button</button>
-      <a href="#" type="button" class="btn btn-default">Anchor Button</a>
-      <button type="button" class="btn btn-default clear blue">Clear Button</button>
-      <button type="button" class="btn btn-default ghost-button">Ghost Button</button>
+      <button type="button" class="btn">Default Button</button>
+      <a href="#" type="button" class="btn">Anchor Button</a>
+      <button type="button" class="btn clear blue">Clear Button</button>
+      <button type="button" class="btn ghost-button">Ghost Button</button>
 
       <div class="code-snippet"><br>
-        &lt;button class=<span class="attribute">"button"</span>&gt;<span class="code-text">Default Button</span>&lt;/button&gt;
-        <br>&lt;a href="#" class=<span class="attribute">"button"</span>&gt;<span class="code-text">Anchor Button</span>&lt;/a&gt;
+        &lt;button class=<span class="attribute">"btn"</span>&gt;<span class="code-text">Default Button</span>&lt;/button&gt;
+        <br>&lt;a href="#" class=<span class="attribute">"btn"</span>&gt;<span class="code-text">Anchor Button</span>&lt;/a&gt;
         <br><span class="comment">//Use either .blue or .white classes to change border and text color:</span>
-        <br>&lt;button class=<span class="attribute">"button clear <span class="variable">blue</span>"</span>&gt;<span class="code-text">Clear Button</span>&lt;/button&gt;
-        <br>&lt;button class=<span class="attribute">"button ghost-button"</span>&gt;<span class="code-text">Ghost Button</span>&lt;/button&gt;
+        <br>&lt;button class=<span class="attribute">"btn clear <span class="variable">blue</span>"</span>&gt;<span class="code-text">Clear Button</span>&lt;/button&gt;
+        <br>&lt;button class=<span class="attribute">"btn ghost-button"</span>&gt;<span class="code-text">Ghost Button</span>&lt;/button&gt;
       </div>
     </div>
   </div>
