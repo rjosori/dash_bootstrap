@@ -62,18 +62,25 @@ h2, h3, h4, h5, h6 {
 
 /*************************************** DEFAULT BUTTON, NAV AND ANCHOR STYLES ***************************************/
 .nav-container {
-  background-color: #0a1e37;
+  background-color: transparent;
   width: 100%;
   height: 85px; }
-  .nav-container .main-nav {
+  .nav-container.footer {
+    height: auto; }
+  .nav-container .navbar-default {
     background: #0a1e37;
-    padding-top: 30px;
+    padding: 30px 0 20px;
     border: none; }
-    .nav-container .main-nav .logo {
+    .nav-container .navbar-default .logo {
       display: inline-block;
       float: left;
-      background: transparent; }
-    .nav-container .main-nav ul {
+      margin-top: -3px;
+      background: url("../img/dashboards_logo.svg") 0 0 no-repeat;
+      background-size: 323px 35px;
+      width: 323px;
+      height: 35px;
+      text-indent: -20000px; }
+    .nav-container .navbar-default ul {
       list-style: none;
       list-style-type: none;
       background: transparent;
@@ -81,17 +88,27 @@ h2, h3, h4, h5, h6 {
       margin: 0;
       display: inline-block;
       float: right; }
-      .nav-container .main-nav ul li {
+      .nav-container .navbar-default ul li {
         float: left;
         display: inline; }
-        .nav-container .main-nav ul li a {
+        .nav-container .navbar-default ul li a {
           color: #ffffff;
           font-size: 18px;
           text-transform: uppercase;
           display: block;
           padding: 0 13px; }
-        .nav-container .main-nav ul li button {
+        .nav-container .navbar-default ul li button {
           margin-top: -13px; }
+  .nav-container .footer-nav {
+    padding: 30px 0 20px;
+    margin-bottom: 0; }
+    .nav-container .footer-nav .logo {
+      background-size: 225px 25px;
+      width: 225px;
+      height: 25px; }
+    .nav-container .footer-nav ul li a {
+      color: #E5E5E5;
+      font-size: 14px; }
 
 .btn, button {
   background-color: #288e50;
@@ -136,12 +153,27 @@ h2, h3, h4, h5, h6 {
     .btn.icon-button .no-text, button.icon-button .no-text {
       display: inline-block;
       text-indent: -20000px; }
+  .btn.icon-button-footer, button.icon-button-footer {
+    padding: 0 !important;
+    margin: 0 0 0 40px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    display: inline-block; }
+    .btn.icon-button-footer .no-text, button.icon-button-footer .no-text {
+      display: inline-block;
+      text-indent: -20000px; }
 
 /*VISUAL FOCUS INDICATOR FOR ACCESSIBILITY PURPOSES*/
-a:focus, button:focus {
-  outline: 2px solid #00CCCC; }
-
 /************************ GLOBAL *******************************/
+.treasury-seal-footer {
+  display: inline-block;
+  background: url("../img/treasury-seal.svg") 0 0;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  margin: -6px 0 0 0; }
+
 @font-face {
   font-family: 'dash-pictorials';
   src: url("../fonts/dash-pictorials.eot?s8cruq");
