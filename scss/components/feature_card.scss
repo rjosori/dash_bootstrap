@@ -54,11 +54,11 @@
   .container {
     //Placeholder for workforce image to be dynamically managed:
     &.workforce {
-      background: url('../../img/workforce-bg.png') no-repeat 0 0;
+      background: url('/img/workforce-bg.png') no-repeat 0 0;
     }
     //Placeholder for dashboard image to be dynamically managed:
     &.dashboard {
-      background: url('../../img/dashboard-bg.png') no-repeat right center;
+      background: url('/img/dashboard-bg.png') no-repeat right center;
     }
     padding: 100px 0;
     background-size: cover;
