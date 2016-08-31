@@ -76,7 +76,9 @@
       </div>
     </div>
   </div>
+</div>
 
+<div class="container">
   <div class="row">
     <div class="col-lg-12">
       <h2 class="section-title">Section Title</h2>
@@ -87,6 +89,12 @@
         <br>&lt;p class=<span class="attribute">"section-title"</span>&gt;<span class="code-text">Section Title</span>&lt;/p&gt;
         <br>&lt;div class=<span class="attribute">"section-title"</span>&gt;<span class="code-text">Section Title</span>&lt;/div&gt;
       </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
       <h2 class="section-title">Page Intro Text</h2>
       <p class="page-intro">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -94,6 +102,10 @@
         type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
         into electronic typesetting, remaining essentially unchanged.
       </p>
+    </div>
+  </div><br>
+  <div class="row">
+    <div class="col-lg-12">
       <div class="code-snippet">
         &lt;p class=<span class="attribute">"page-intro"</span>&gt;<br>
           <span class="code-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -105,7 +117,10 @@
       </div>
     </div>
   </div>
+</div>
 
+<!-- BUTTONS -->
+<div class="container">
   <div class="row">
     <div class="col-lg-12 section">
       <h2 class="section-title">Buttons and Button-looking Anchors</h2>
@@ -113,8 +128,9 @@
       <a href="#" type="button" class="btn">Anchor Button</a>
       <button type="button" class="btn clear blue">Clear Button</button>
       <button type="button" class="btn ghost-button">Ghost Button</button>
-
-      <div class="code-snippet"><br>
+    </div>
+    <div class="col-lg-12 section">
+      <div class="code-snippet">
         &lt;button class=<span class="attribute">"btn"</span>&gt;<span class="code-text">Default Button</span>&lt;/button&gt;
         <br>&lt;a href="#" class=<span class="attribute">"btn"</span>&gt;<span class="code-text">Anchor Button</span>&lt;/a&gt;
         <br><span class="comment">//Use either .blue or .white classes to change border and text color:</span>
@@ -123,7 +139,84 @@
       </div>
     </div>
   </div>
+</div>
+<!-- BLUE CARD -->
+<div class="feature-card right blue">
+  <div class="container workforce">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="floating-container">
+          <h2 class="feature-title">
+            <span>Featured Topic: </span>
+            <div class="sub-title">Workforce</div>
+          </h2>
+          <p class="feature-text">
+            Learn about the insights gathered from this HR-cenetered topic area. Filter results further by organization and keywords to see how your organizations stacks up.
+          </p>
+          <button class="btn clear white feature-button">See the Topic</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- WHITE CARD -->
+<div class="feature-card left white">
+  <div class="container dashboard">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="floating-container">
+          <h2 class="feature-title">
+            <span>Featured Dasboard: </span>
+            <div class="sub-title">Strategic Objective Alignment</div>
+          </h2>
+          <p class="feature-text">
+            Learn about the insights gathered from this objective-cenetered topic area. Filter results further by organization and goal to see how your organizations stacks up.
+          </p>
+          <button class="btn clear white feature-button">See the Dashboard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURE CARD CODE SNIPPET -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="section">
+        <h2 class="section-title">Feature Card</h2>
+      </div>
+      <div class="code-snippet">
+        <span class="comment">//Options: .right or .left, .blue, .red, or .white, .workforce</span>
+        <!--1--><br>&lt;div class=<span class="attribute">"feature-card <span class="variable">right blue</span>"</span>&gt;
+        <!--2--><br>&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"container <span class="variable">workforce</span>"</span>&gt;
+        <!--3--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"container"</span>&gt;
+        <!--4--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"row"</span>&gt;
+        <!--5--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"col-lg-12"</span>&gt;
+        <!--6--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"floating-container</span>"&gt;
+        <!--7--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class=<span class="attribute">"feature-title"</span>&gt;
+
+        <!--8--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;<span class="code-text">Featured Topic: </span>&lt;/span&gt;
+        <!--8--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=<span class="attribute">"sub-title"</span>&gt;<span class="code-text">Workforce</span>&lt;/span&gt;
+
+        <!--7--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h2&gt;
+        <!--7--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=<span class="attribute">"feature-text"</span>&gt;
+        <!--8--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-text">Content here.</span>
+        <!--7--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+        <!--7--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class=<span class="attribute">"btn clear white feature-button"</span>&gt;<span class="code-text">See the Topic</span>&lt;/button&gt;
+        <!--6--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+        <!--5--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+        <!--4--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+        <!--3--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+        <!--2--><br>&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+        <!--1--><br>&lt;/div&gt;
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
     <div class="row">
       <div class="col-lg-12">
         <h2 class="section-title">Dash UI Colors</h2>
@@ -304,7 +397,8 @@
       </div>
 
     </div>
-    <div class="row">
+
+  <div class="row">
       <div class="col-lg-12">
         <div class="section">
           <h2 class="section-title">Footer</h2>
@@ -335,6 +429,7 @@
     </div>
 
 </div>
+
 <footer class="footer nav-container">
   <nav class="navbar navbar-default footer-nav">
     <div class="container">
