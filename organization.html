@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Dash's UI Style Guide and Component Library</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+<div class="nav-container">
+  <nav class="navbar navbar-default navbar-fixed-top main-nav">
+    <div class="container">
+      <div class="title-bar-left logo">Dashboards</div>
+      <ul class="title-bar-right">
+        <li><a href="#">Link A</a></li>
+        <li><a href="#">Link B</a></li>
+        <li><a href="#">Link C</a></li>
+        <li><a class="nav-link" href="#">Link D</a></li>
+        <li>
+          <button class="icon-button light">
+            <i class="icon-user"></i>
+            <span class="no-text">My Account</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="page-title-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-title">This is an H1 Heading</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="kpi-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="section-title">OCIO Key Performance Indicators (KPI's)</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="card kpi-card trending-up">
+          <i class="kpi-title-icon icon-governance small-sz"></i>
+          <h4 class="kpi-card-title">Governance Status</h4>
+          <div class="kpi-description">
+            <p>Cras vel sodales augue. Fusce vestibulum, nulla at dapibus consectetur, nunc risus ultricies nibh, non dignissim erat lectus nec lectus. Nunc porta metus lorem.</p>
+          </div>
+          <div class="kpi-card-metrics">
+            <div class="kpi-value" data-percentage="85">85%</div>
+            <small class="kpi-value-info">Towards KPI Completion</small>
+            <div class="kpi-graph">
+              <div class="kpi-bar-value" data-percentage="85"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card kpi-card trending-down">
+          <i class="kpi-title-icon icon-sustainability small-sz"></i>
+          <h4 class="kpi-card-title">Sustainability Status</h4>
+          <div class="kpi-description">
+            <p>Cras vel sodales augue. Fusce vestibulum, nulla at dapibus consectetur, nunc risus ultricies nibh, non dignissim erat lectus nec lectus. Nunc porta metus lorem.</p>
+          </div>
+          <div class="kpi-card-metrics">
+            <div class="kpi-value" data-percentage="45">45%</div>
+            <small class="kpi-value-info">Towards KPI Completion</small>
+            <div class="kpi-graph">
+              <div class="kpi-bar-value" data-percentage="45"></div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="card kpi-card trending-up">
+        <i class="kpi-title-icon icon-cyber small-sz"></i>
+        <h4 class="kpi-card-title">Cybersecurity Status</h4>
+        <div class="kpi-description">
+          <p>Cras vel sodales augue. Fusce vestibulum, nulla at dapibus consectetur, nunc risus ultricies nibh, non dignissim erat lectus nec lectus. Nunc porta metus lorem.</p>
+        </div>
+        <div class="kpi-card-metrics">
+          <div class="kpi-value" data-percentage="91">91%</div>
+          <small class="kpi-value-info">Towards KPI Completion</small>
+          <div class="kpi-graph">
+            <div class="kpi-bar-value" data-percentage="91"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-sm-6">
+    <div class="card kpi-card trending-med">
+      <i class="kpi-title-icon icon-workforce small-sz"></i>
+      <h4 class="kpi-card-title">Workforce Status</h4>
+      <div class="kpi-description">
+        <p>Cras vel sodales augue. Fusce vestibulum, nulla at dapibus consectetur, nunc risus ultricies nibh, non dignissim erat lectus nec lectus. Nunc porta metus lorem.</p>
+      </div>
+      <div class="kpi-card-metrics">
+        <div class="kpi-value" data-percentage="60">60%</div>
+        <small class="kpi-value-info">Towards KPI Completion</small>
+        <div class="kpi-graph">
+          <div class="kpi-bar-value" data-percentage="60"></div>
+        </div>
+      </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+  //KPI value bar
+  $('.kpi-bar-value').each(function(){
+      var kpiValue = $(this).attr('data-percentage');
+      $(this).css('width', kpiValue + '%');
+  });
+</script>
+</body>
+</html>
