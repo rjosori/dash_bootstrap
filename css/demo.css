@@ -326,9 +326,9 @@ h2, h3, h4, h5, h6 {
   padding: 100px 0;
   background-size: cover; }
   .feature-card .container.workforce {
-    background: url("/img/workforce-bg.png") no-repeat 0 0; }
+    background: url("../img/workforce-bg.png") no-repeat 0 0; }
   .feature-card .container.dashboard {
-    background: url("/img/dashboard-bg.png") no-repeat right center; }
+    background: url("../img/dashboard-bg.png") no-repeat right center; }
 .feature-card .floating-container {
   display: inline-block;
   width: 50%;
@@ -361,7 +361,7 @@ h2, h3, h4, h5, h6 {
       display: inline-block;
       float: left;
       margin-top: -3px;
-      background: url("/img/dashboards_logo.svg") 0 0 no-repeat;
+      background: url("../img/dashboards_logo.svg") 0 0 no-repeat;
       background-size: 323px 35px;
       width: 323px;
       height: 35px;
@@ -399,7 +399,7 @@ h2, h3, h4, h5, h6 {
 
 .treasury-seal-footer {
   display: inline-block;
-  background: url("/img/treasury-seal.svg") 0 0;
+  background: url("../img/treasury-seal.svg") 0 0;
   background-size: 30px 30px;
   width: 30px;
   height: 30px;
@@ -481,7 +481,7 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   background-color: #f9f9f9;
   border: 1px solid #E5E5E5;
-  padding: 20px 20px;
+  padding: 20px;
   text-align: left; }
   .code-snippet.h1 {
     margin-top: -30px; }
