@@ -110,6 +110,11 @@
   &.focus-color {
     background-color: $focus-color;
   }
+  &.off-white {
+    background-color: $off-white;
+    border: $default-border;
+    color: $dark-gray;
+  }
 }
 
 .demo-icon {
