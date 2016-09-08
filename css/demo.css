@@ -701,7 +701,7 @@ h2, h3, h4, h5, h6 {
 
 .code-snippet {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  color: red;
+  color: #008080;
   font-size: 14px;
   border: 1px solid #E5E5E5;
   margin-bottom: 30px;
